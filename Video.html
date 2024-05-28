@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Видео о компании</title>
+    <link rel="stylesheet" href="data/main.css">
+</head>
+<body>
+    <header>
+        <div class="header-content">
+            <img src="data/header-logo.png" alt="Логотип компании">
+            <h1 style="color: white; font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;">Акционерный коммерческий банк "ФОРА-БАНК"</h1>
+        </div>
+    </header>
+
+    <main>
+        <div class="content">
+            <div class="container">
+                <h2>Видео о компании</h2>
+                <iframe width="560" height="315" src="https://www.youtube.com/embed/YaVzHayI4Tw" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
+            </div>
+        </div>
+
+        <!-- Панель меню -->
+        <div class="menu-panel">
+            <a href="Info.html" class="menu-icon">📜</a>
+            <a href="News.html" class="menu-icon">📰</a>
+            <a href="Course.html" class="menu-icon">📈</a>
+            <a href="Contact.html" class="menu-icon">📞</a>
+            <a href="Video.html" class="menu-icon">🎬</a>
+        </div>
+
+        <script>
+            // Скрипт для увеличения панели при наведении
+            const menuPanel = document.querySelector('.menu-panel');
+            menuPanel.addEventListener('mouseover', () => {
+                menuPanel.classList.add('expanded');
+            });
+            menuPanel.addEventListener('mouseout', () => {
+                menuPanel.classList.remove('expanded');
+            });
+        </script>
+    </main>
+
+    <footer>
+        <p>&copy; 2024 АКБ "ФОРА-БАНК" (АО) <a href="https://www.forabank.ru/" target="_blank" style="color: white;">ссылка на официальный сайт</a></p>
+    </footer>
+</body>
+</html>

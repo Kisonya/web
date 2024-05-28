@@ -1,0 +1,216 @@
+body {
+    margin: 0;
+    padding: 0;
+    font-family: Arial, sans-serif;
+    display: flex;
+    flex-direction: column;
+    min-height: 100vh;
+    position: relative;
+    background-color: #f9f9f9;
+    color: #333;
+}
+
+header {
+    background-color: #003399;
+    color: white;
+    width: 100%;
+    padding: 10px 0;
+    text-align: center;
+    position: fixed;
+    top: 0;
+    z-index: 1000;
+}
+
+header .header-content {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 20px;
+}
+
+header img {
+    max-width: 150px;
+}
+
+.container {
+    width: 80%;
+    margin: 150px auto 100px auto; /* Margin adjusted to account for fixed header and footer */
+    overflow: hidden;
+    padding: 20px;
+    background: white;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    border-radius: 8px;
+}
+
+.centered-content {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+}
+
+h1, h2 {
+    color: #003399;
+}
+
+h1 {
+    border-bottom: 2px solid #003399;
+    padding-bottom: 10px;
+}
+
+p {
+    line-height: 1.8;
+    margin: 15px 0;
+    font-size: 16px;
+}
+
+ul {
+    margin: 20px 0;
+    padding-left: 20px;
+}
+
+ul li {
+    margin-bottom: 10px;
+    line-height: 1.6;
+    font-size: 16px;
+}
+
+ul ul {
+    margin-top: 10px;
+    padding-left: 20px;
+}
+
+ul ul li {
+    margin-bottom: 5px;
+    line-height: 1.6;
+    font-size: 15px;
+}
+
+a {
+    color: #003399;
+    text-decoration: none;
+}
+
+a:hover {
+    text-decoration: underline;
+}
+
+img {
+    max-width: 100%;
+    height: auto;
+}
+
+footer {
+    background-color: #003399;
+    color: white;
+    text-align: center;
+    position: fixed;
+    bottom: 0;
+    width: 100%;
+    z-index: 1000;
+}
+
+.content {
+    flex: 1;
+    padding: 20px;
+}
+
+.menu-panel {
+    position: fixed;
+    bottom: 50px; /* Place it just above the footer */
+    left: 50%;
+    transform: translateX(-50%);
+    display: flex;
+    background-color: #333;
+    padding: 10px;
+    border-radius: 10px 10px 0 0;
+    transition: transform 0.3s ease-in-out, padding 0.3s ease-in-out;
+    z-index: 999;
+}
+
+.menu-panel.expanded {
+    transform: translateX(-50%) scale(1.1);
+    padding: 20px;
+}
+
+.menu-icon {
+    color: white;
+    text-decoration: none;
+    font-size: 24px;
+    margin: 0 10px;
+    transition: color 0.3s;
+}
+
+.menu-icon:hover {
+    color: #ddd;
+}
+
+/* Новости */
+
+.news-card {
+    border: 1px solid #ddd;
+    border-radius: 8px;
+    padding: 16px;
+    margin: 16px 0;
+    background-color: #fff;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+.news-card h3 {
+    margin: 0 0 8px;
+    color: #003399;
+}
+.news-card p {
+    margin: 8px 0;
+}
+.news-card .date {
+    font-size: 14px;
+    color: #777;
+}
+.news-card button {
+    background-color: #003399;
+    color: white;
+    border: none;
+    padding: 8px 16px;
+    cursor: pointer;
+    border-radius: 4px;
+}
+.news-card button:hover {
+    background-color: #002266;
+}
+
+/* Курс валют */
+
+.currency-converter {
+    max-width: 600px;
+    margin: 0 auto;
+    padding: 20px;
+    background: #f9f9f9;
+    border-radius: 8px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+.currency-converter input, .currency-converter select {
+    width: 100%;
+    padding: 10px;
+    margin: 10px 0;
+    border: 1px solid #ddd;
+    border-radius: 4px;
+}
+.currency-converter button {
+    width: 100%;
+    padding: 10px;
+    background-color: #003399;
+    color: white;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+}
+.currency-converter button:hover {
+    background-color: #002266;
+}
+.exchange-rate {
+    text-align: center;
+    margin-top: 20px;
+}
+.title {
+    text-align: center;
+}
