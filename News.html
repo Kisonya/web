@@ -120,14 +120,14 @@
             });
 
             // Функция для показа полного текста новости
-            function toggleFullText(button) {
+            function toggleFullText(button) {  // Получаем следующий элемент после кнопки
                 const fullText = button.nextElementSibling;
-                if (fullText.style.display === "none") {
-                    fullText.style.display = "block";
-                    button.textContent = "Скрыть";
+                if (fullText.style.display === "none") {  // Проверяем, скрыт ли полный текст
+                    fullText.style.display = "block";  // Если скрыт, то показываем его
+                    button.textContent = "Скрыть";  // Меняем текст кнопки на "Скрыть"
                 } else {
-                    fullText.style.display = "none";
-                    button.textContent = "Показать полностью";
+                    fullText.style.display = "none";  // Если показан, то скрываем его
+                    button.textContent = "Показать полностью"; // Меняем текст кнопки на "Показать полностью"
                 }
             }
         </script>

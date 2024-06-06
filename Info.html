@@ -78,11 +78,11 @@
         <script>
             // Скрипт для увеличения панели при наведении
             const menuPanel = document.querySelector('.menu-panel');
-            menuPanel.addEventListener('mouseover', () => {
+            menuPanel.addEventListener('mouseover', () => { // Добавляем обработчик события 'mouseover' (когда мышь наводится на элемент)
                 menuPanel.classList.add('expanded');
             });
-            menuPanel.addEventListener('mouseout', () => {
-                menuPanel.classList.remove('expanded');
+            menuPanel.addEventListener('mouseout', () => { // Добавляем обработчик события 'mouseout' (когда мышь уходит с элемента)
+                menuPanel.classList.remove('expanded'); // Удаляем класс 'expanded' у элемента 'menu-panel' при уходе мыши
             });
         </script>
     </main>
